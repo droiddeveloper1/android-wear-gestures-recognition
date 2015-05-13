@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity" >
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="5"
+        android:showAsAction="never" />
+    <item android:id="@+id/action_circle"
+        android:title="@string/action_circle"
+        android:orderInCategory="10"
+        android:showAsAction="never" />
+    <item android:id="@+id/action_square"
+        android:title="@string/action_square"
+        android:orderInCategory="20"
+        android:showAsAction="never" />
+    <item android:id="@+id/action_vee"
+        android:title="@string/action_vee"
+        android:orderInCategory="30"
+        android:showAsAction="never" />
+    <item android:id="@+id/action_triangle"
+        android:title="@string/action_triangle"
+        android:orderInCategory="40"
+        android:showAsAction="never" />
+    <item android:id="@+id/action_line"
+        android:title="@string/action_line"
+        android:orderInCategory="50"
+        android:showAsAction="never" />
+</menu>
+<!-- From: file:/D:/AndroidStudioProjects/GoogleCodePublished_GestureProject/mobile/src/main/res/menu/main.xml -->

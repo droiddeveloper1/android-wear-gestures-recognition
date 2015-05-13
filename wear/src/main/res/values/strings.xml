@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Gestures Project 1</string>
+    <string name="hello_round">Hello Round World!</string>
+    <string name="hello_square">Hello Square World!</string>
+    <string name="accel_demo">:: Sensor Demo ::</string>
+    <string name="send_data">Send2Phone</string>
+
+</resources>

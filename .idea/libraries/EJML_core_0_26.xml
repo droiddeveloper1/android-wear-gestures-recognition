@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="EJML-core-0.26">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mobile/libs/EJML-core-0.26.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

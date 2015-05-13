@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="orson-charts-android-1.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mobile/libs/orson-charts-android-1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

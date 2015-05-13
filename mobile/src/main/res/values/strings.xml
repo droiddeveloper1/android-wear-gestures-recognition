@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gestures Project 1</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">select shape:</string>
+    <string name="action_circle">Circle</string>
+    <string name="action_square">Square</string>
+    <string name="action_line">Line</string>
+    <string name="action_vee">Vee</string>
+    <string name="action_triangle">Triangle</string>
+</resources>
