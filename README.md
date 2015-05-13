@@ -1,18 +1,18 @@
 # android-wear-gestures-recognition
-Android Wear Gesture Recognizer. 
+Android Wear Gesture Recognizer.
 This combined Android Wear/Android Mobile application attempts to recognize some basic gestures/motions from a wearable.  
 Several gestures are predefined(circle, line, vee, triangle, square) and their motion coefficients precomputed.
 
-Summary
+Summary:
 Gesture recognition by analysis of wearable's motion pattern
 
-Introduction
+Introduction:
 This combined Android Wear/Android Mobile application attempts to recognize some basic gestures/motions from a wearable by analyzing the associated Elliptic Fourier Descriptors(EFD).
 
 Several gestures are predefined(circle, line, vee, triangle, square) and their motion coefficients pre-computed. These pre-computed gestures are applied in the classification stage of the analysis. 
 The app behaves in two modes: (1)it analyzes the wearable's motion/gesture, (2) it writes a file to externalstorage that contains the results of each motion analysis (i.e. a set of 8 EFD harmonics). 
 
-Details
+Details:
 The Android Wear component collects triple-axis accelerometer information and sends it (via Bluetooth MessageApi?) to the paired Android phone/mobile device. The Android mobile app then applies PCA(Principal Components Analysis) to reduce the dimensionality of the received 3D data to 2D for further analysis. I used a PCA algorithm based on SVD(Singular Value Decomposition), as opposed to the EVD(Eigenvalue Decomposition) alternative, because although EVD may be computationally faster, it is not guaranteed to be numerically stable. Elliptic Fourier Descriptors(EFD) of the 2D data are then computed (just the first 8 harmonics,) and compared to the set of pre-computed descriptors. EFD was chosen over other competing techniques (Hidden Markov Models, Dynamic Time Warping, Recurrent Neural Networks, etc.) due to the availability of an efficient mobile library, its speed of computation, and its rotation-, scale- and translation-invariance properties. 
 For those interested, the following sites contain more information about EFDs: 
 http://demonstrations.wolfram.com/FourierDescriptors/ 
@@ -48,7 +48,7 @@ Use your finger(s) to manipulate, scale, and rotate the scatter plot in order to
 Click on the "Elliptic Fourier Descriptor" button to compute the EFD harmonics (just the lowest 8 harmonics) and to obtain a classification decision. The classification decision will appear as a Toast on the screen. By default, the EFD data will also be written out to a file in external storage on the mobile device (default location: /GESTURES/ folder under external storage root folder). 
 This is a text file containing sets of EFD harmonics(4-tuples) that can be directly appended to the existing training set in the app.
 
-Improvements
+Improvements:
 In order to obtain more accurate classification results, you can run the app to generate more sets of descriptors for a particular motion gesture and simply append the corresponding nested lists of descriptors (4-tuple doubles values) to the corresponding data structure defined in com.dmt.gestureproject_1.Constants.java . 
 
 I chose to compute only the first 8 EFD harmonics for each gesture. Perhaps increasing or decreasing the number of computed harmonics may lead to an improvement in the classification accuracy.
