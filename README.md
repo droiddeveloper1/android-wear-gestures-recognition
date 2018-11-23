@@ -38,9 +38,10 @@ The EFD class was obtained from Katja Schulze's PlantoVision project (https://gi
 
 The app was tested using the following combination of hardware: 
 - Motorola Droid Turbo ('KitKat' 4.4.4) 
-- Motorola "Moto 360" smart watch 
-Usage
-Android Wear bluetooth debugging instructions can be found here: https://developer.android.com/training/wearables/apps/bt-debugging.html
+- Motorola "Moto 360" smart watch
+
+Usage:
+Android Wear bluetooth debugging instructions can be found here:- https://developer.android.com/training/wearables/apps/bt-debugging.html
 
 After pairing the Android wearable with the mobile device, install both components of the app. On the wearable UI, click the "Send2Phone" button to start capturing accelerometer data. Default capture window is 1500ms. The wearable UI will turn from black to red while motion data is being captured, then back to black again after data capture has completed.
 
