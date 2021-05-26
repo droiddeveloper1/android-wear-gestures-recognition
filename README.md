@@ -58,3 +58,5 @@ Improvements:
 In order to obtain more accurate classification results, you can run the app to generate more sets of descriptors for a particular motion gesture and simply append the corresponding nested lists of descriptors (4-tuple doubles values) to the corresponding data structure defined in com.dmt.gestureproject_1.Constants.java . 
 
 I chose to compute only the first 8 EFD harmonics for each gesture. Perhaps increasing or decreasing the number of computed harmonics may lead to an improvement in the classification accuracy.
+
+-Oke Uwechue, Ph.D.
