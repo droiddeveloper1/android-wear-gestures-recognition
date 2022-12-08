@@ -29,7 +29,7 @@ The 3D scatterplots are rendered using a proprietary closed source OpenGL-based 
 
 In summary, the gesture recognition algorithm comprises of several components: 
 1. collect 3D acceleration data from the wearable 
-2. re-dimension the 3D data to planar 2D via PCA (Principal Components Analysis) by projecting the 3D vectors onto a 2D plane-of-best-fit 
+2. re-dimension the 3D data to planar 2D via PCA by projecting the 3D vectors onto a 2D plane-of-best-fit 
 3. calculate the Fourier co-efficients(i.e. Elliptic Fourier Descriptors) of the 2D motion vectors 
 4. compute a "distance" metric between the measured vectors and a set of pre-computed vectors 
 5. sort the list of distance measures in ascending order, and pick the top one as the best match. 
